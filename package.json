@@ -1,0 +1,19 @@
+{
+  "name": "mei-package-atom",
+  "main": "./lib/mei-package-atom",
+  "version": "0.0.0",
+  "author": "Sienna M. Wood <sienna.m.wood@gmail.com>",
+  "description": "A package for the Atom text editor to provide validation, autocompletion, and notation rendering (with Verovio) for the development of MEI (Music Encoding Initiative, an XML-based standard for encoding music documents).",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "mei-package-atom:toggle"
+  },
+  "repository": "https://github.com/siennamw/mei-package-atom",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

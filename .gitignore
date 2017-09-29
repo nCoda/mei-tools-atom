@@ -1,0 +1,7 @@
+# the usual suspects
+.DS_Store
+npm-debug.log
+node_modules
+
+# compiled CSS
+**/*.css
