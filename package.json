@@ -1,19 +1,28 @@
 {
-  "name": "mei-package-atom",
-  "main": "./lib/mei-package-atom",
+  "name": "mei-tools-atom",
+  "main": "./lib/mei-tools-atom",
   "version": "0.0.0",
   "author": "Sienna M. Wood <sienna.m.wood@gmail.com>",
-  "description": "A package for the Atom text editor to provide validation, autocompletion, and notation rendering (with Verovio) for the development of MEI (Music Encoding Initiative, an XML-based standard for encoding music documents).",
-  "keywords": [
+  "description": "A package for the Atom text editor to provide validation, autocompletion, and notation rendering (with Verovio) for the development of music encodings in the MEI format (music-encoding.org).",
+  "keywords": [],
+  "activationHooks": [
+    "language-mei:grammar-used",
+    "language-xml:grammar-used"
   ],
-  "activationCommands": {
-    "atom-workspace": "mei-package-atom:toggle"
-  },
-  "repository": "https://github.com/siennamw/mei-package-atom",
+  "repository": "https://github.com/siennamw/mei-tools-atom",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "atom-package-deps": "^4.6.0",
+    "jquery": "^3.2.1",
+    "verovio": "./lib/verovio-node"
+  },
+  "package-deps": [
+    "language-mei"
+  ],
+  "deserializers": {
+    "mei-tools-atom/MeiToolsAtom": "deserializeMeiToolsAtomView"
   }
 }

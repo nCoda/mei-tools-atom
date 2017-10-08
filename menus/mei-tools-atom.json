@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle MEI Tools",
+        "command": "mei-tools-atom:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "MEI Tools",
+          "submenu": [
+            {
+              "label": "Show/Hide Notation",
+              "command": "mei-tools-atom:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
