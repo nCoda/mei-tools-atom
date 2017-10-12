@@ -4,6 +4,8 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
+@highlight-color: #0098F0;
+
 .mei-tools-atom {
     #verovio-svg {
         background-color: #FFF;
@@ -15,9 +17,31 @@
         height: 100%;
 
         g.highlighted, g.highlighted * {
-            fill: red;
-            color: red;
-            stroke: red;
+            fill: @highlight-color;
+            color: @highlight-color;
+            stroke: @highlight-color;
         }
     }
+
+    #verovio-controls-form {
+        padding: .5rem 1rem;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.1);
+
+        input[type="range"], input[type="color"] {
+            max-width: 100%;
+            display: inline-block;
+            margin: 0 1rem;
+            vertical-align: middle;
+        }
+
+        input[type="range"] {
+            width: auto;
+        }
+
+        label {
+            margin-left: 1rem;
+        }
+    }
+
 }
