@@ -5,15 +5,18 @@
 __This package is currently under development__ and there are known performance issues with large files.  Contributions are welcome.
 
 ## Current Features
+![screenshot - Chopin, vertical scroll, blue highlight](./screenshots/chopin_wrap.png)
+![screenshot - Brahms, horizontal scroll, orange highlight](./screenshots/brahms_no-wrap.png)
+
 - as-you-type rendering into music notation with _[Verovio](http://www.verovio.org/)_
-- current element (based on cursor position in MEI code) is highlighted in notation
+- scale notation (zoom in or out) for ease of viewing
+- flow measures horizontally or wrap systems for vertical flow (scroll through music horizontally or vertically)
+- element under cursor in MEI code is highlighted in notation
     - this feature works by matching `xml:id`s, so if you have no `xml:id`s on your elements you will have no highlighting in your notation
     - if the current element has no `xml:id`, the parent `<staff>` and then `<measure>` will be checked and highlighted if an `xml:id` is found
+- choose color for highlighting
 - click on a note or other rendered notation element to take the cursor to the associated place in the MEI code
-    - also relies on `xml:id`s, so elements without ids do not provide this feature
-- scale notation (zoom in or out) for ease of viewing
-- choose color used for highlighting
-- flow measures horizontally or wrap systems for vertical flow (scroll through music horizontally or vertically)
+    - also relies on `xml:id`s, so elements without `xml:id`s do not provide this feature
 
 ## Planned Features
 - create option to automatically generate `xml:id`s
