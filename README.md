@@ -12,9 +12,10 @@ __This package is currently under development__ and there are known performance 
 - click on a note or other rendered notation element to take the cursor to the associated place in the MEI code
     - also relies on `xml:id`s, so elements without ids do not provide this feature
 - scale notation (zoom in or out) for ease of viewing
+- choose color used for highlighting
+- flow measures horizontally or wrap systems for vertical flow (scroll through music horizontally or vertically)
 
 ## Planned Features
-- allow choice of highlighting color
 - create option to automatically generate `xml:id`s
 - address performance issues with large documents
 - integrate validation and other XML helper tools?
