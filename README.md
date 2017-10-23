@@ -4,13 +4,17 @@
 
 __This package is currently under development__ and there are known performance issues with large files.  Contributions are welcome.
 
+## Screenshots
+![screenshot - Chopin piano etude, paginated, magenta highlight](./screenshots/chopin_paginated.png)
+![screenshot - Berlioz symphony, paginated, orange highlight](./screenshots/berlioz_paginated.png)
+![screenshot - Ahle chorale, not paginated, blue highlight](screenshots/ahle_not-paginated.png)
+
 ## Current Features
-![screenshot - Chopin, vertical scroll, blue highlight](./screenshots/chopin_wrap.png)
-![screenshot - Brahms, horizontal scroll, orange highlight](./screenshots/brahms_no-wrap.png)
 
 - As-you-type rendering into music notation with _[Verovio](http://www.verovio.org/)_
 - Scale notation (zoom in or out) for ease of viewing
-- Flow measures horizontally or wrap systems for vertical flow (scroll through music horizontally or vertically)
+- Pagination allows larger files to be rendered into notation with better performance
+- Flow measures horizontally for smaller files
 - Element under cursor in MEI code is highlighted in notation
     - this feature works by matching `xml:id`s, so if you have no `xml:id`s on your elements you will have no highlighting in your notation
     - if the current element has no `xml:id`, the parent `<staff>` and then `<measure>` will be checked and highlighted if an `xml:id` is found
@@ -20,16 +24,17 @@ __This package is currently under development__ and there are known performance 
 
 ## Planned Features
 - Create function to automatically generate `xml:id`s
-- Address performance issues with large documents
+- Address remaining performance issues with large documents
 - Integrate validation and autocomplete?
 - Integrate other XML helper tools and style sheets?
 
 ## Installation
-This package is not yet available on the official Atom registry because _Verovio_ is not yet available from the [NPM registry](https://www.npmjs.com/), so there are a few extra steps for installation that require use of the command line.
+This package is not yet published to the official Atom registry, so there are a few extra steps for installation that require use of the command line.
 1. Download and install the [Atom text editor](https://atom.io/).
 1. Launch Terminal (if you are using a Mac or Linux operating system) or another command-line tool.
 1. Type `which git` into your Terminal window and press enter.  If there is no return value, you will need to [install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) before proceeding to the next steps.
-1. Once Git is installed, copy and paste the following commands into your Terminal window and press enter:
+1. Type `which npm` into your Terminal window and press enter.  If there is no return value, you will need to [install Node and NPM](https://www.npmjs.com/get-npm) before proceeding to the next steps.
+1. Once Git and Node/NPM are installed, copy and paste the following commands into your Terminal window and press enter:
     ```
     cd ~/.atom/packages
     git clone https://github.com/siennamw/mei-tools-atom.git
