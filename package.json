@@ -1,7 +1,7 @@
 {
   "name": "mei-tools-atom",
   "main": "./lib/mei-tools-atom",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Sienna M. Wood <sienna.m.wood@gmail.com>",
   "description": "A package for the Atom text editor to provide music notation rendering (with Verovio) and other tools for the development of music encodings in the MEI format (music-encoding.org).",
   "keywords": [],
