@@ -17,6 +17,10 @@
             {
               "label": "Show/Hide Notation",
               "command": "mei-tools-atom:toggle"
+            },
+            {
+              "label": "Convert MusicXML to MEI",
+              "command": "mei-tools-atom:convertToMEI"
             }
           ]
         }
