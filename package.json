@@ -3,7 +3,7 @@
   "main": "./lib/mei-tools-atom",
   "version": "0.2.0",
   "author": "Sienna M. Wood <sienna.m.wood@gmail.com>",
-  "description": "A package for the Atom text editor to provide music notation rendering (with Verovio) and other tools for the development of music encodings in the MEI format (music-encoding.org).",
+  "description": "A package for the Atom text editor to provide music notation rendering (with Verovio) and other tools for the development of music encodings in the MEI format (music-encoding.org). Developed and maintained by the nCoda team (https://ncodamusic.org/).",
   "keywords": [],
   "activationHooks": [
     "language-mei:grammar-used",

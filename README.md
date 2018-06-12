@@ -1,6 +1,6 @@
 # mei-tools-atom
 
-[MEI](http://music-encoding.org/) is an open-source XML-based system for the semantic encoding of music documents. This package, for use with the open-source [Atom text editor](https://atom.io/), provides on-the-fly rendering of MEI into music notation with _[Verovio](http://www.verovio.org/)_.
+For use with the open-source text editor [_Atom_](https://atom.io/), this package provides on-the-fly rendering of [MEI](http://music-encoding.org/) into music notation with _[Verovio](http://www.verovio.org/)_. It was created with the support of the [nCoda](https://ncodamusic.org/) team, who will also provide ongoing development and maintenance.
 
 __This package is currently under development__ and there are known performance issues with large files.  Contributions are welcome.
 
@@ -11,13 +11,13 @@ __This package is currently under development__ and there are known performance 
 
 ## Current Features
 
-- As-you-type rendering into music notation with _[Verovio](http://www.verovio.org/)_
+- As-you-type rendering of MEI into music notation with _[Verovio](http://www.verovio.org/)_
 - Scale notation (zoom in or out) for ease of viewing
 - Pagination allows larger files to be rendered into notation with better performance
 - Flow measures horizontally for smaller files
 - Element under cursor in MEI code is highlighted in notation
     - this feature works by matching `xml:id`s, so if you have no `xml:id`s on your elements you will have no highlighting in your notation
-    - if the current element has no `xml:id`, the parent `<staff>` and then `<measure>` will be checked and highlighted if an `xml:id` is found
+    - if the current element has no `xml:id`, the parent `<staff>` and then `<measure>` will be checked for an `xml:id` and will be highlighted if one is found
 - Choose color for highlighting
 - Click on a note or other rendered notation element to take the cursor to the associated place in the MEI code
     - also relies on `xml:id`s, so elements without `xml:id`s do not provide this feature
@@ -46,4 +46,4 @@ This package requires [atom-language-mei](https://github.com/nCoda/atom-language
 Only valid MEI can be rendered into notation with _[Verovio](http://www.verovio.org/)_. To ensure your MEI is valid, an XML validation package is recommended.  [linter-autocomplete-jing](https://github.com/aerhard/linter-autocomplete-jing) was designed for use with TEI and MEI, so I recommend starting there.  Please note that [linter-autocomplete-jing](https://github.com/aerhard/linter-autocomplete-jing) requires Java Runtime Environment (JRE) v1.6 or above.  [Visit the package repository](https://github.com/aerhard/linter-autocomplete-jing) for details.
 
 ## Gratitude
-Thanks to Laurent Pugin and the MEI community for [all their work on _Verovio_](https://github.com/rism-ch/verovio).  Thanks also to Laurent for making _Verovio_ available to me as a Node package.
+Thanks to Laurent Pugin and the MEI community for [all their work on _Verovio_](https://github.com/rism-ch/verovio).  Thanks also to Laurent for making _Verovio_ available to me as a Node package. Thanks to the [nCoda](https://ncodamusic.org/) team for the financial support that started this project and for their ongoing contributions.
