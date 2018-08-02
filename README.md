@@ -37,7 +37,7 @@ Once installed, use the package by following these steps:
 1. Launch Atom and open an MEI file (menu item File > Open...).
     - [this is a nice example encoding](https://raw.githubusercontent.com/music-encoding/sample-encodings/master/MEI_3.0/Music/Complete_examples/Chopin_Etude_op.10_no.9.mei) - save with the `.mei` extension (delete anything after `.mei`)
     - [more examples of MEI 3.0 encodings can be found here](https://github.com/music-encoding/sample-encodings/tree/master/MEI_3.0/Music/Complete_examples)
-1. To display the notation, use the menu item Packages > MEI Tools > Show/Hide Notation, or simply press `Ctrl Option Cmd M`.
+1. To display the notation, use the menu item Packages > MEI Tools > Show/Hide Notation, or simply press `Ctrl Option M` on a Mac, or `Ctrl Alt M` for Windows.
 
 ## Dependencies
 This package requires [atom-language-mei](https://github.com/nCoda/atom-language-mei), which will be installed automatically when this package is installed.
