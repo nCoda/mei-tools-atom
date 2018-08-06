@@ -1,5 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-alt-cmd-m": "mei-tools-atom:toggle"
+    "ctrl-alt-m": "mei-tools-atom:toggle"
   }
 }
