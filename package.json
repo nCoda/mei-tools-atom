@@ -9,7 +9,7 @@
     "language-mei:grammar-used",
     "language-xml:grammar-used"
   ],
-  "repository": "https://github.com/siennamw/mei-tools-atom",
+  "repository": "https://github.com/nCoda/mei-tools-atom",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
