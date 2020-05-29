@@ -17,7 +17,7 @@
   "dependencies": {
     "atom-package-deps": "^4.6.0",
     "jquery": "^3.2.1",
-    "verovio-dev": "^2.0.0-4"
+    "verovio": "^2.0.0-4"
   },
   "package-deps": [
     "language-mei"
